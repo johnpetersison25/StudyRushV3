@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class interact : MonoBehaviour
+public class InteractBook : MonoBehaviour
 {
     public TMP_Text interactText;
     public bool canInteract = false;

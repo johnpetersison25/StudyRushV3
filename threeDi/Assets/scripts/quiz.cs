@@ -45,27 +45,31 @@ public class quiz : MonoBehaviour
     }
 
     private IEnumerator HandleAnswer(bool isCorrect)
+{
+    yield return new WaitForSeconds(0.25f);
+
+    if (isCorrect)
     {
-        yield return new WaitForSeconds(0.25f);
-
-        if (isCorrect)
-        {
-            score += 1;
-            UpdateScoreText();
-        }
-
-        if (currentLevel + 1 < Quiz_Number.Length)
-        {
-            Quiz_Number[currentLevel].SetActive(false);
-            currentLevel++;
-            Quiz_Number[currentLevel].SetActive(true);
-        }
-
-        if (currentLevel < Quiz_Number.Length)
-        {
-            ShowResult();
-        }
+        score += 1;
+        UpdateScoreText();
     }
+
+    // Disable the current question
+    Quiz_Number[currentLevel].SetActive(false);
+    currentLevel++;
+
+    // Check if there are more questions
+    if (currentLevel < Quiz_Number.Length)
+    {
+        // Show the next question
+        Quiz_Number[currentLevel].SetActive(true);
+    }
+    else
+    {
+        // All questions answered, show result
+        ShowResult();
+    }
+}
 
     void UpdateScoreText()
     {

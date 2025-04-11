@@ -15,7 +15,8 @@ public class FirstPersonController : MonoBehaviour
     private float xRotation = 0f;
     private bool isLooking = false;
 
-    interact _interact;
+    InteractBook _interactBook;
+    InteractDoor _interactDoor;
 
     [Header("Stamina Settings")]
     public RawImage staminaBar;
@@ -28,7 +29,7 @@ public class FirstPersonController : MonoBehaviour
 
     void Start()
     {
-        _interact = FindAnyObjectByType<interact>();
+        _interactBook = FindAnyObjectByType<InteractBook>();
         controller = GetComponent<CharacterController>();
         playerCamera = Camera.main.transform;
     }
@@ -112,9 +113,10 @@ public class FirstPersonController : MonoBehaviour
 
     void HandleInteraction()
     {
-        if (Input.GetKeyDown(KeyCode.E) && _interact != null && _interact.canInteract)
+        if (Input.GetKeyDown(KeyCode.E) && _interactBook != null && _interactBook.canInteract)
         {
-            _interact.QuizScene();
+            _interactBook.QuizScene();
         }
+        
     }
 }
