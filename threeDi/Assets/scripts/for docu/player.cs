@@ -115,7 +115,7 @@ public class FirstPersonController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && _interactBook != null && _interactBook.canInteract)
         {
-            _interactBook.QuizScene();
+            _interactBook.ExamineBook();
         }
         
     }

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3d1d04e96eb3d904aa77263b9b8743c4
+timeCreated: 1530682050
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 150261
+  packageName: Plants
+  packageVersion: 1.0
+  assetPath: Assets/PlantsPackage/Materials/wall.mat
+  uploadId: 320782

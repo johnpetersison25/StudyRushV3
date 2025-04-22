@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/game.unity
     guid: e96ba61284170ce45895b748466654aa
   - enabled: 1
-    path: Assets/Scenes/quiz.unity
+    path: Assets/Scenes/quiz scenes/math.unity
     guid: 5ec3758e72527b449b0e9225a4218a15
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

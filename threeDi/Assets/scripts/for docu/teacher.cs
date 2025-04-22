@@ -10,7 +10,21 @@ public class teacher : MonoBehaviour
         {
             SceneManager.LoadSceneAsync(0);
         }
+
+        GameObject manager = GameObject.FindGameObjectWithTag("GameManager");
+
+        if (manager != null)
+        {
+            Destroy(manager);
+            Debug.Log("GameManager destroyed");
+        }
+        else
+        {
+            Debug.LogWarning("GameManager not found!");
+        }
     }
+
+    
 
     
 }

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7428ef4f48d706a40b8d733729902f17
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 150261
+  packageName: Plants
+  packageVersion: 1.0
+  assetPath: Assets/PlantsPackage/Materials/plants6.mat
+  uploadId: 320782
