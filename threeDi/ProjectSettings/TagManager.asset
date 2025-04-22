@@ -8,6 +8,7 @@ TagManager:
   - Door
   - GameManager
   - Teacher
+  - Collectible
   layers:
   - Default
   - TransparentFX
