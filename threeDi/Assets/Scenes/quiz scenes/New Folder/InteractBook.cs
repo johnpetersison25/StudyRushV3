@@ -5,9 +5,10 @@ using UnityEngine.AI;
 
 public class InteractBook : MonoBehaviour
 {
+    [SerializeField] GameObject toDestroy;
     public TMP_Text interactText;
     public bool canInteract = false;
-    public NavMeshAgent teacherAgent;
+
 
     private void Start()
     {
@@ -48,6 +49,17 @@ public class InteractBook : MonoBehaviour
 
     public void ExamineBook()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(2, LoadSceneMode.Additive);
+
+        Color color = interactText.color;
+            color.a = 0; // Hide text
+            interactText.color = color;
+
+        Destroy(toDestroy);
+        Manager.collectedNotes++;
     }
 }
+
+
+
+    
