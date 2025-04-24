@@ -12,8 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/game.unity
     guid: e96ba61284170ce45895b748466654aa
   - enabled: 1
-    path: Assets/Scenes/quiz scenes/math.unity
-    guid: 5ec3758e72527b449b0e9225a4218a15
+    path: Assets/Scenes/quiz scenes/filipino.unity
+    guid: c362be60af0eb1c4bab6c4e766af3520
+  - enabled: 1
+    path: Assets/Scenes/quiz scenes/english.unity
+    guid: 84b6bee2c68dcb440a8727dc22538d5b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 35d00924c5d813e4aa83d28f6d806eee, type: 2}
   m_UseUCBPForAssetBundles: 0

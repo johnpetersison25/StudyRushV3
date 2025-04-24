@@ -3,33 +3,49 @@ using UnityEngine;
 public class Manager : MonoBehaviour
 {
     public static int collectedNotes;
+    public static quizV2 quiz;
 
-    int score;
-    public float agentspeed;
+    public float MathAgentSpeed;
+    public float EnglishAgentSpeed;
+    public float ScienceAgentSpeed;
+    public float HistoryAgentSpeed;
+    public float FilipinoAgentSpeed;
 
-    quizV2 quiz;
+    private bool updated = false;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log("helow");
         quiz = FindObjectOfType<quizV2>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (quiz == null)
         {
             quiz = FindObjectOfType<quizV2>();
-            Debug.Log("Trying to find quiz...");
-        if (quiz == null)
-         {
-            Debug.Log("quiz is still null");
-            return;
-         }
+            if (quiz == null) return;
         }
 
-}
+        if (quiz.quizdone && !updated)
+        {
+            int myScore = quiz.finalScore;
+
+            if (quiz.currentSubject == quizV2.Subject.Math && myScore < 3)
+                MathAgentSpeed = 6f;
+
+            if (quiz.currentSubject == quizV2.Subject.English && myScore < 3)
+                EnglishAgentSpeed = 5f;
+
+            if (quiz.currentSubject == quizV2.Subject.Science && myScore < 3)
+                ScienceAgentSpeed = 6f;
+
+            if (quiz.currentSubject == quizV2.Subject.History && myScore < 3)
+                HistoryAgentSpeed = 6f;
+
+            if (quiz.currentSubject == quizV2.Subject.Filipino && myScore < 3)
+                FilipinoAgentSpeed = 6f;
+
+            updated = true;
+        }
+    }
 }

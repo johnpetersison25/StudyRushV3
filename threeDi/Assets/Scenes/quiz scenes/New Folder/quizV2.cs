@@ -101,11 +101,12 @@ public class quizV2 : MonoBehaviour
         return subjectScores.ContainsKey(subject) ? subjectScores[subject] : 0;
     }
 
-    public void NextScene(int index)
+    public void NextScene(string nameScene)
     {
-        SceneManager.UnloadSceneAsync(index);
+        SceneManager.UnloadSceneAsync(nameScene);
         StartCoroutine(Delete());
         quizdone = true;
+        Time.timeScale = 1;
     }
 
     IEnumerator Delete()
