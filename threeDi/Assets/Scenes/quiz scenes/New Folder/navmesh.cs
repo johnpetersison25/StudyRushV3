@@ -1,17 +1,18 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class navmesh : MonoBehaviour
+public class navmeshyu : MonoBehaviour
 {
     public Transform player;
     private NavMeshAgent agent;
-
     public float stoppingDistance = 2f;
+    Manager _manager;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.stoppingDistance = stoppingDistance;
+        _manager = FindAnyObjectByType<Manager>();
     }
 
     void Update()
@@ -31,5 +32,7 @@ public class navmesh : MonoBehaviour
                 }
             }
         }
+
+        agent.speed = _manager.FilipinoAgentSpeed;
     }
 }

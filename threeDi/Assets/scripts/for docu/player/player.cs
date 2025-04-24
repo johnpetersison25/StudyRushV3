@@ -111,12 +111,52 @@ public class FirstPersonController : MonoBehaviour
         transform.Rotate(Vector3.up * mouseX);
     }
 
-    void HandleInteraction()
+    private InteractBook currentBook;
+
+private void OnTriggerEnter(Collider other)
+{
+    if (other.CompareTag("book"))
     {
-        if (Input.GetKeyDown(KeyCode.E) && _interactBook != null && _interactBook.canInteract)
+        InteractBook book = other.GetComponent<InteractBook>();
+        if (book != null)
         {
-            _interactBook.ExamineBook();
+            currentBook = book;
+
+            Color color = book.interactText.color;
+            color.a = 1;
+            book.interactText.color = color;
+            book.canInteract = true;
         }
-        
     }
+}
+
+private void OnTriggerExit(Collider other)
+{
+    if (other.CompareTag("book"))
+    {
+        InteractBook book = other.GetComponent<InteractBook>();
+        if (book != null)
+        {
+            Color color = book.interactText.color;
+            color.a = 0;
+            book.interactText.color = color;
+            book.canInteract = false;
+
+            if (currentBook == book)
+            {
+                currentBook = null;
+            }
+        }
+    }
+}
+
+void HandleInteraction()
+{
+    if (Input.GetKeyDown(KeyCode.E) && currentBook != null && currentBook.canInteract)
+    {
+        currentBook.ExamineBook();
+        currentBook = null;
+        Time.timeScale = 0;
+    }
+}
 }

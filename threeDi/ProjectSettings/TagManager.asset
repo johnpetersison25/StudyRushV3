@@ -9,6 +9,7 @@ TagManager:
   - GameManager
   - Teacher
   - Collectible
+  - EventSystem
   layers:
   - Default
   - TransparentFX
