@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: 96246dcc2e2d1fc4484029f02fda7a88
   - enabled: 1
-    path: Assets/Scenes/game EASY.unity
+    path: Assets/Scenes/gameplay.unity
     guid: e96ba61284170ce45895b748466654aa
   - enabled: 1
     path: Assets/Scenes/quiz scenes/filipino.unity
