@@ -2,13 +2,12 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 
-public class InteractDoor2 : MonoBehaviour
+public class for2Doors : MonoBehaviour
 {
     public GameObject door1;
     public GameObject door2;
 
     public TMP_Text interactText;
-    [SerializeField] TMP_Text warning;
 
     public float door1OpenAngle = 90f;
     public float door2OpenAngle = -90f;
@@ -24,9 +23,6 @@ public class InteractDoor2 : MonoBehaviour
 
     void Start()
     {
-        // Hide warning at start
-        SetTextAlpha(warning, 0f);
-
         closedRot1 = door1.transform.rotation;
         closedRot2 = door2.transform.rotation;
 
@@ -38,15 +34,7 @@ public class InteractDoor2 : MonoBehaviour
     {
         if (isPlayerNear && Input.GetKeyDown(KeyCode.E))
         {
-            if (statica.collectedNotes >= 5)
-            {
                 isOpen = !isOpen;
-            }
-            else
-            {
-                Debug.Log("You need to collect all 5 notes first!");
-                StartCoroutine(ShowWarning());
-            }
         }
 
         // Smooth rotation
@@ -79,13 +67,6 @@ public class InteractDoor2 : MonoBehaviour
         SetTextAlpha(interactText, show ? 1f : 0f);
     }
 
-    IEnumerator ShowWarning()
-    {
-        warning.text = "You need to collect all 5 notes first!";
-        SetTextAlpha(warning, 1f);
-        yield return new WaitForSeconds(3f);
-        SetTextAlpha(warning, 0f);
-    }
 
     void SetTextAlpha(TMP_Text text, float alpha)
     {
