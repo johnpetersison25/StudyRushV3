@@ -11,6 +11,8 @@ TagManager:
   - Collectible
   - EventSystem
   - secon
+  - Coin
+  - VendingMachine
   layers:
   - Default
   - TransparentFX

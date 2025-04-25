@@ -12,8 +12,18 @@ public class ItemCollector : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && itemInRange != null)
         {
-            inventoryUI.CollectItem(itemInRange);
-            itemInRange.SetActive(false);
+            if (itemInRange.CompareTag("Coin"))
+            {
+                inventoryUI.AddCoin(1);
+                Debug.Log("Picked up a coin.");
+                itemInRange.SetActive(false);
+            }
+            else if (itemInRange.CompareTag("Collectible"))
+            {
+                inventoryUI.CollectItem(itemInRange);
+                itemInRange.SetActive(false);
+            }
+
             itemInRange = null;
         }
     }
@@ -25,7 +35,7 @@ public class ItemCollector : MonoBehaviour
 
         foreach (var hit in hits)
         {
-            if (hit.CompareTag("Collectible"))
+            if (hit.CompareTag("Collectible") || hit.CompareTag("Coin"))
             {
                 itemInRange = hit.gameObject;
                 break;
