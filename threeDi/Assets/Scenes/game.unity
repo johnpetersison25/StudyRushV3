@@ -13655,7 +13655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   dashSpeed: 10
-  mouseSensitivity: 20
+  mouseSensitivity: 200
   staminaBar: {fileID: 1497815362}
   barMaxWidth: 100
   stamina: 100

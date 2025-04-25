@@ -68,13 +68,13 @@ public class MenuHoverManager : MonoBehaviour
         switch (index)
         {
             case 0:
-                return "EASY MODE\n<indent=7px>• More Collectibles\n<indent=7px>• Slower Enemies\n<indent=7px>• Easier Quizzes.";
+                return "  EASY MODE\n<indent=7px>• More Collectibles\n<indent=7px>• Slower Enemies\n<indent=7px>• Easier Quizzes.";
             case 1:
-                return "MEDIUM MODE\n<indent=7px>• Balanced Gameplay\n<indent=7px>• Moderate Enemies\n<indent=7px>• Standard Quizzes.";
+                return "  MEDIUM MODE\n<indent=7px>• Balanced Gameplay\n<indent=7px>• Moderate Enemies\n<indent=7px>• Standard Quizzes.";
             case 2:
-                return "HARD MODE\n<indent=7px>• Fewer Items\n<indent=7px>• Faster Enemies\n<indent=7px>• Tougher Quizzes.";
+                return "  HARD MODE\n<indent=7px>• Fewer Items\n<indent=7px>• Faster Enemies\n<indent=7px>• Tougher Quizzes.";
             default:
-                return "Unknown Mode";
+                return "";
         }
     }
 }
