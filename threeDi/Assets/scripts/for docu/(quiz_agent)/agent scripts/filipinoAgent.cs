@@ -7,7 +7,7 @@ public class filipinoAgent : MonoBehaviour
     public Transform player;
     private NavMeshAgent agent;
     private Collider TriggerOn;
-
+    
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
