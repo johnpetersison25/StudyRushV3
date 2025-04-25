@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.AI;
 
 public class navmeshyu : MonoBehaviour
@@ -7,16 +7,20 @@ public class navmeshyu : MonoBehaviour
     private NavMeshAgent agent;
     public float stoppingDistance = 2f;
     Manager _manager;
+    quizV2 quizzy;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.stoppingDistance = stoppingDistance;
         _manager = FindAnyObjectByType<Manager>();
+
+        quizzy = FindObjectOfType<quizV2>();
     }
 
     void Update()
     {
+        
         if (player != null)
         {
             agent.SetDestination(player.position);
@@ -33,6 +37,12 @@ public class navmeshyu : MonoBehaviour
             }
         }
 
-        agent.speed = _manager.FilipinoAgentSpeed;
+        if (quizzy.quizdone)
+        {
+            agent.speed += 2f;
+        }
+
+        agent.speed = _manager.AgentSpeed;
     }
 }
+*/

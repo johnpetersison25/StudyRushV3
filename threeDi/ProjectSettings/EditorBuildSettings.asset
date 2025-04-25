@@ -17,6 +17,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/quiz scenes/english.unity
     guid: 84b6bee2c68dcb440a8727dc22538d5b
+  - enabled: 1
+    path: Assets/Scenes/quiz scenes/history.unity
+    guid: 59441f2d3f43609489a28e772df72e0c
+  - enabled: 1
+    path: Assets/Scenes/quiz scenes/math.unity
+    guid: 5ec3758e72527b449b0e9225a4218a15
+  - enabled: 1
+    path: Assets/Scenes/quiz scenes/science.unity
+    guid: 1683386ee716dbf49ae1261ca9f4d2ee
+  - enabled: 1
+    path: Assets/Scenes/Winner UI.unity
+    guid: 2ebca0c98c907e2449171b9aa4e897f6
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 35d00924c5d813e4aa83d28f6d806eee, type: 2}
   m_UseUCBPForAssetBundles: 0

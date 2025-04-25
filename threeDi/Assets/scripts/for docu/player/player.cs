@@ -156,7 +156,6 @@ void HandleInteraction()
     {
         currentBook.ExamineBook();
         currentBook = null;
-        Time.timeScale = 0;
     }
 }
 }

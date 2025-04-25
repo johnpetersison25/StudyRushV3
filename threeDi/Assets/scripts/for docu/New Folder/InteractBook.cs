@@ -26,6 +26,12 @@ public class InteractBook : MonoBehaviour
         interactText.color = color;
 
         Destroy(toDestroy);
-        Manager.collectedNotes++;
+
+        GameObject[] teachers = GameObject.FindGameObjectsWithTag("Teacher");
+foreach (GameObject teacher in teachers)
+{
+    teacher.SetActive(false);
+}
+
     }
 }

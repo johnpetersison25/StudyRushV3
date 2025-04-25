@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -19,6 +19,8 @@ public class quizV2 : MonoBehaviour
     public int finalScore;
     public bool quizdone = false;
 
+    Manager _manager;
+
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -30,6 +32,8 @@ public class quizV2 : MonoBehaviour
         InitializeScores();
         UpdateScoreText();
         resultPanel.SetActive(false);
+
+        _manager = GetComponent<Manager>();
     }
 
     void InitializeScores()
@@ -102,11 +106,19 @@ public class quizV2 : MonoBehaviour
     }
 
     public void NextScene(string nameScene)
-    {
+    {   
+        Manager manager = FindAnyObjectByType<Manager>();
+   
+
         SceneManager.UnloadSceneAsync(nameScene);
         StartCoroutine(Delete());
         quizdone = true;
-        Time.timeScale = 1;
+
+        foreach (GameObject teacher in Manager.teachers)
+{
+    if (teacher != null)
+        teacher.SetActive(true);
+}
     }
 
     IEnumerator Delete()
@@ -125,5 +137,9 @@ public class quizV2 : MonoBehaviour
         {
             Debug.LogWarning("GameManager not found!");
         }
+        
     }
+
+    
 }
+*/
