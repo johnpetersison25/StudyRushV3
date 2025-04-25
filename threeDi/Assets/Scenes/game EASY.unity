@@ -54766,6 +54766,7 @@ GameObject:
   - component: {fileID: 1253370276}
   - component: {fileID: 1253370275}
   - component: {fileID: 1253370274}
+  - component: {fileID: 1253370279}
   m_Layer: 0
   m_Name: Energy Drink
   m_TagString: Collectible
@@ -54880,6 +54881,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1253370279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253370273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 116d34d113f0ef649afd08b0a4c2b074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  interactText: {fileID: 425533542}
+  openAngle: 90
+  openSpeed: 2
+  canInteract: 0
 --- !u!1001 &1258562582
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68365,6 +68383,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4962025386924609673, guid: 2b23fd819e8890e4bae6782feabf3193, type: 3}
   m_PrefabInstance: {fileID: 1592423923}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1599980727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1599980729}
+  - component: {fileID: 1599980728}
+  m_Layer: 0
+  m_Name: bgm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1599980728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599980727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802bde2930871994586f81530ab4a55f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dangerMusic: {fileID: 8300000, guid: beca05f2159fcc14ab3fb4e029d42bb9, type: 3}
+--- !u!4 &1599980729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599980727}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.244658, y: 2.4461906, z: 173.07236}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1600124283
 GameObject:
   m_ObjectHideFlags: 0
@@ -74662,6 +74725,7 @@ GameObject:
   - component: {fileID: 1730986133}
   - component: {fileID: 1730986132}
   - component: {fileID: 1730986131}
+  - component: {fileID: 1730986136}
   m_Layer: 0
   m_Name: Spray
   m_TagString: Collectible
@@ -74776,6 +74840,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1730986136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730986130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 116d34d113f0ef649afd08b0a4c2b074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  interactText: {fileID: 425533542}
+  openAngle: 90
+  openSpeed: 2
+  canInteract: 0
 --- !u!1 &1734395049
 GameObject:
   m_ObjectHideFlags: 0
@@ -94919,3 +95000,4 @@ SceneRoots:
   - {fileID: 1560557443}
   - {fileID: 1253370278}
   - {fileID: 1730986135}
+  - {fileID: 1599980729}

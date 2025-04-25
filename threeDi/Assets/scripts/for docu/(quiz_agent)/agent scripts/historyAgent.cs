@@ -26,6 +26,8 @@ public class historyAgent : MonoBehaviour
         {
             agent.speed = 6f;
             TriggerOn.isTrigger = true;
+
+            BGM.Instance.PlayDangerMusic();
         }
     }
 
@@ -45,6 +47,8 @@ public class historyAgent : MonoBehaviour
             mathQ.mathQuizIsDone = false;
             statica.collectedNotes = 0;
             agent.speed = 0f;
+            BGM.Instance.StopMusic();
+
             SceneManager.LoadSceneAsync(0);
         }
     }

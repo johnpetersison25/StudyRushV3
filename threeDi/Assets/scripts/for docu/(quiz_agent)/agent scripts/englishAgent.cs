@@ -26,6 +26,9 @@ public class englishAgent : MonoBehaviour
         {
             agent.speed = 4f;
             TriggerOn.isTrigger = true;
+
+            BGM.Instance.PlayDangerMusic();
+
         }
     }
 
@@ -45,6 +48,8 @@ public class englishAgent : MonoBehaviour
             mathQ.mathQuizIsDone = false;
             statica.collectedNotes = 0;
             agent.speed = 0f;
+            BGM.Instance.StopMusic();
+
             SceneManager.LoadSceneAsync(0);
         }
     }
