@@ -24,7 +24,7 @@ public class historyAgent : MonoBehaviour
 
         if(historyQ.historyScore < 3 && historyQ.historyQuizIsDone == true)
         {
-            agent.speed = 6f;
+            agent.speed = 7f;
             TriggerOn.isTrigger = true;
 
             BGM.Instance.PlayDangerMusic();
@@ -49,7 +49,7 @@ public class historyAgent : MonoBehaviour
             agent.speed = 0f;
             BGM.Instance.StopMusic();
 
-            SceneManager.LoadSceneAsync(0);
+            SceneManager.LoadSceneAsync("GAME OVER");
         }
     }
 }

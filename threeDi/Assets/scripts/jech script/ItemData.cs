@@ -6,10 +6,20 @@ public class ItemData : MonoBehaviour
     public enum ItemType { EnergyDrink, Spray }
     public ItemType itemType;
 
+    public AudioClip soundEffectSpray;  // Assign the audio clip in the Inspector
+    public AudioClip soundEffectDrink; 
+    private AudioSource audioSource;
+
     public RawImage icon;
     public GameObject sprayEffectPrefab;  // Reference to the spray effect prefab
 
     public Transform sprayStartPoint;  // Point from where the spray originates (e.g., player's hand or camera)
+
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     public void Use(FirstPersonController player)
     {
@@ -19,6 +29,8 @@ public class ItemData : MonoBehaviour
                 // Increase stamina
                 player.stamina = Mathf.Min(player.maxStamina, player.stamina + 50f);
                 Debug.Log("Energy Drink used. Stamina recovered!");
+                 audioSource.PlayOneShot(soundEffectDrink);
+
                 break;
 
             case ItemType.Spray:
@@ -28,6 +40,8 @@ public class ItemData : MonoBehaviour
 
                 // If you have a specific start point for the spray (e.g., the player's hand or camera):
                 Vector3 sprayStartPos = sprayStartPoint.position;
+
+                 audioSource.PlayOneShot(soundEffectSpray);
 
                 if (Physics.Raycast(sprayStartPos, sprayDirection, out hit, raycastDistance))
                 {

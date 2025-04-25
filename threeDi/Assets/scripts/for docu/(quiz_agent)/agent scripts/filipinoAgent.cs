@@ -24,7 +24,7 @@ public class filipinoAgent : MonoBehaviour
 
         if(FilipinoQ.FilipinoScore < 3 && FilipinoQ.filipinoQuizIsDone == true)
         {
-            agent.speed = 5f;
+            agent.speed = 9f;
             TriggerOn.isTrigger = true;
 
             BGM.Instance.PlayDangerMusic();
@@ -48,7 +48,7 @@ public class filipinoAgent : MonoBehaviour
             statica.collectedNotes = 0;
             agent.speed = 0f;
             BGM.Instance.StopMusic();
-            SceneManager.LoadSceneAsync(0);
+            SceneManager.LoadSceneAsync("GAME OVER");
         }
     }
 }

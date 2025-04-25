@@ -24,7 +24,7 @@ public class englishAgent : MonoBehaviour
 
         if(EnglishQ.EnglishScore < 3 && EnglishQ.EnglishQuizIsDone == true)
         {
-            agent.speed = 4f;
+            agent.speed = 6f;
             TriggerOn.isTrigger = true;
 
             BGM.Instance.PlayDangerMusic();
@@ -50,7 +50,7 @@ public class englishAgent : MonoBehaviour
             agent.speed = 0f;
             BGM.Instance.StopMusic();
 
-            SceneManager.LoadSceneAsync(0);
+            SceneManager.LoadSceneAsync("GAME OVER");
         }
     }
 }

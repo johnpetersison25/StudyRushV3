@@ -24,7 +24,7 @@ public class mathAgent : MonoBehaviour
 
         if(mathQ.mathScore < 3 && mathQ.mathQuizIsDone == true)
         {
-            agent.speed = 7f;
+            agent.speed = 10f;
             TriggerOn.isTrigger = true;
 
             BGM.Instance.PlayDangerMusic();
@@ -49,7 +49,7 @@ public class mathAgent : MonoBehaviour
             agent.speed = 0f;
             BGM.Instance.StopMusic();
 
-            SceneManager.LoadSceneAsync(0);
+            SceneManager.LoadSceneAsync("GAME OVER");
         }
     }
 }

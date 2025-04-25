@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class statica : MonoBehaviour
 {
-    public static int collectedNotes;
+    public static int collectedNotes = 5;
     public GameObject[] teacherObjects; // Assign in Inspector ✅
     public static GameObject[] teachers; // Access from anywhere ✅
     public TMP_Text collectedNotesTXT;
@@ -31,6 +31,7 @@ public class statica : MonoBehaviour
         if(other.tag == "Player")
         {
             SceneManager.LoadScene(8);
+            collectedNotes = 0;
         }
     }
 }

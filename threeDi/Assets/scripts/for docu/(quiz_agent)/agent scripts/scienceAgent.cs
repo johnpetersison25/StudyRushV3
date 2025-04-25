@@ -24,7 +24,7 @@ public class scienceAgent : MonoBehaviour
 
         if(scienceQ.scienceScore < 3 && scienceQ.scienceQuizIsDone == true)
         {
-            agent.speed = 4f;
+            agent.speed = 7f;
             TriggerOn.isTrigger = true;
 
             BGM.Instance.PlayDangerMusic();
@@ -49,7 +49,8 @@ public class scienceAgent : MonoBehaviour
             agent.speed = 0f;
             BGM.Instance.StopMusic();
 
-            SceneManager.LoadSceneAsync(0);
+
+            SceneManager.LoadSceneAsync("GAME OVER");
         }
     }
 }

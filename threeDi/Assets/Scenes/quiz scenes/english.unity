@@ -964,7 +964,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8620608965226303063}
         m_TargetAssemblyTypeName: EnglishQ, Assembly-CSharp
-        m_MethodName: CorrectAnswer
+        m_MethodName: WrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2111,7 +2111,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8620608965226303063}
         m_TargetAssemblyTypeName: EnglishQ, Assembly-CSharp
-        m_MethodName: WrongAnswer
+        m_MethodName: CorrectAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
