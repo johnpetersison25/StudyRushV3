@@ -16,8 +16,13 @@ public class InteractDoor : MonoBehaviour
 
     public bool canInteract = false;
 
+    public AudioClip soundEffect;  // Assign the audio clip in the Inspector
+    private AudioSource audioSource;
+
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
         closedRotation = door.transform.rotation;
         openRotation = Quaternion.Euler(door.transform.eulerAngles + new Vector3(0, openAngle, 0));
 
@@ -28,6 +33,7 @@ public class InteractDoor : MonoBehaviour
         if (isPlayerNear && Input.GetKeyDown(KeyCode.E))
         {
             isOpen = !isOpen;
+            audioSource.PlayOneShot(soundEffect);
         }
 
         Quaternion targetRotation = isOpen ? openRotation : closedRotation;

@@ -21,9 +21,13 @@ public class InteractDoor2 : MonoBehaviour
     private Quaternion openRot1, openRot2;
 
     public bool canInteract = false;
+    public AudioClip soundEffect;  // Assign the audio clip in the Inspector
+    private AudioSource audioSource;
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
         // Hide warning at start
         SetTextAlpha(warning, 0f);
 
@@ -41,6 +45,7 @@ public class InteractDoor2 : MonoBehaviour
             if (statica.collectedNotes >= 5)
             {
                 isOpen = !isOpen;
+                audioSource.PlayOneShot(soundEffect);
             }
             else
             {

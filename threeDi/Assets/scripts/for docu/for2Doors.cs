@@ -21,8 +21,13 @@ public class for2Doors : MonoBehaviour
 
     public bool canInteract = false;
 
+    public AudioClip soundEffect;  // Assign the audio clip in the Inspector
+    private AudioSource audioSource;
+
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
         closedRot1 = door1.transform.rotation;
         closedRot2 = door2.transform.rotation;
 
@@ -35,6 +40,7 @@ public class for2Doors : MonoBehaviour
         if (isPlayerNear && Input.GetKeyDown(KeyCode.E))
         {
                 isOpen = !isOpen;
+                audioSource.PlayOneShot(soundEffect);
         }
 
         // Smooth rotation
