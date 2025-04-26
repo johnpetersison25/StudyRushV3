@@ -7,19 +7,18 @@ public class VendingMachine : MonoBehaviour
     public int coinCost = 1;
 
     private bool playerNearby = false;
-    private Items playerInventory;
 
     void Update()
     {
         if (playerNearby && Input.GetKeyDown(KeyCode.E))
         {
-            if (playerInventory.GetCoinCount() >= coinCost)
+            if (statica.coin >= coinCost)
             {
-                playerInventory.RemoveCoins(coinCost);
+                statica.coin -= coinCost;
 
                 if (itemToGive != null && itemSpawnPoint != null)
                 {
-                    GameObject spawnedItem = Instantiate(itemToGive, itemSpawnPoint.position, Quaternion.identity);
+                    Instantiate(itemToGive, itemSpawnPoint.position, Quaternion.identity);
                     Debug.Log("Item dispensed from vending machine!");
                 }
             }
@@ -35,7 +34,6 @@ public class VendingMachine : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerNearby = true;
-            playerInventory = other.GetComponent<ItemCollector>()?.inventoryUI;
         }
     }
 
@@ -44,7 +42,6 @@ public class VendingMachine : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerNearby = false;
-            playerInventory = null;
         }
     }
 }

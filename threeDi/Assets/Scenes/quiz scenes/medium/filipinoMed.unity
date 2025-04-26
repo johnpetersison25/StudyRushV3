@@ -817,7 +817,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8620608965003385689}
         m_TargetAssemblyTypeName: FilipinoQ, Assembly-CSharp
-        m_MethodName: CorrectAnswer
+        m_MethodName: WrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1228,7 +1228,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bahay
+  m_text: Tamad
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1366,7 +1366,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Maganda
+  m_text: Masipag
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2116,7 +2116,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jose Rizal
+  m_text: Umalis siya nang tahimik
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2207,7 +2207,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' Alin sa mga sumusunod ang isang pangngalan?'
+  m_text: Ano ang kasingkahulugan ng salitang masigasig?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2369,7 +2369,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.6491, y: 0}
+  m_AnchoredPosition: {x: 0.64909935, y: 0}
   m_SizeDelta: {x: 22.074, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &2425980659660048954
@@ -2446,7 +2446,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8620608965003385689}
         m_TargetAssemblyTypeName: FilipinoQ, Assembly-CSharp
-        m_MethodName: WrongAnswer
+        m_MethodName: CorrectAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2742,7 +2742,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &3741192128445273834
 GameObject:
   m_ObjectHideFlags: 0
@@ -2778,7 +2778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &3810672231277690469
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2930,7 +2930,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ako
+  m_text: Tuwirang pahayag
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3234,9 +3234,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 273.95007, y: 183.86472}
-  m_SizeDelta: {x: 16.098, y: 22.102}
-  m_Pivot: {x: 0.5000001, y: 0.5}
+  m_AnchoredPosition: {x: 337, y: 183.1}
+  m_SizeDelta: {x: 61.1266, y: 23.6301}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4686732346038050683
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3344,7 +3344,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tumakbo
+  m_text: Matapat
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3480,7 +3480,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8620608965003385689}
         m_TargetAssemblyTypeName: FilipinoQ, Assembly-CSharp
-        m_MethodName: WrongAnswer
+        m_MethodName: CorrectAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3510,7 +3510,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sino ang may-akda ng Florante at Laura?
+  m_text: Alin ang tamang gamit ng ng at nang sa pangungusap?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3717,8 +3717,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 2.2644708, y: 189.5336}
-  m_SizeDelta: {x: 16.0979, y: 22.102}
+  m_AnchoredPosition: {x: -0.0002985, y: 189.51}
+  m_SizeDelta: {x: 50.7791, y: 22.617}
   m_Pivot: {x: 0.5000001, y: 0.5}
 --- !u!222 &6032460206335452627
 CanvasRenderer:
@@ -3771,7 +3771,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' Francisco Balagtas'
+  m_text: Umalis siya ng tahimik
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3862,7 +3862,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lope K. Santos
+  m_text: Umalis nang siya tahimik
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4041,8 +4041,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -274.06332, y: 183.86472}
-  m_SizeDelta: {x: 16.098145, y: 22.102}
+  m_AnchoredPosition: {x: -360, y: 189.65}
+  m_SizeDelta: {x: 62.8146, y: 22.3445}
   m_Pivot: {x: 0.5000001, y: 0.5}
 --- !u!114 &6533841540056070859
 MonoBehaviour:
@@ -4157,7 +4157,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8620608965003385689}
         m_TargetAssemblyTypeName: FilipinoQ, Assembly-CSharp
-        m_MethodName: CorrectAnswer
+        m_MethodName: WrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4288,7 +4288,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8620608965003385689}
         m_TargetAssemblyTypeName: FilipinoQ, Assembly-CSharp
-        m_MethodName: CorrectAnswer
+        m_MethodName: WrongAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4348,7 +4348,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Alin sa mga sumusunod ang halimbawa ng panghalip
+  m_text: Ano ang ibig sabihin ng sawikain?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4511,8 +4511,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 273.95007, y: 183.86472}
-  m_SizeDelta: {x: 16.098, y: 22.102}
+  m_AnchoredPosition: {x: 317, y: 190.66}
+  m_SizeDelta: {x: 47.0163, y: 20.3343}
   m_Pivot: {x: 0.5000001, y: 0.5}
 --- !u!1 &7398114827176186430
 GameObject:
@@ -4660,7 +4660,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kumakain
+  m_text: Panghalip na panaklaw
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4783,7 +4783,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Guro
+  m_text: Malalim na kahulugan
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4917,8 +4917,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.000045776, y: 183.86}
-  m_SizeDelta: {x: 42.3744, y: 22.102}
+  m_AnchoredPosition: {x: -0.000015259, y: 182.88}
+  m_SizeDelta: {x: 64.881, y: 20.1459}
   m_Pivot: {x: 0.5000001, y: 0.5}
 --- !u!114 &8495027712577100139
 MonoBehaviour:
@@ -5116,7 +5116,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8620608965003385689}
         m_TargetAssemblyTypeName: FilipinoQ, Assembly-CSharp
-        m_MethodName: WrongAnswer
+        m_MethodName: CorrectAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5143,8 +5143,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -271, y: 183.86}
-  m_SizeDelta: {x: 30.2182, y: 22.102}
+  m_AnchoredPosition: {x: -373, y: 184.25}
+  m_SizeDelta: {x: 52.8453, y: 22.8881}
   m_Pivot: {x: 0.5000001, y: 0.5}
 --- !u!224 &9054703594773100290
 RectTransform:
@@ -5181,7 +5181,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.5118, y: 0}
+  m_AnchoredPosition: {x: 0.51180077, y: 0}
   m_SizeDelta: {x: 12.8727, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &9170577990929888295

@@ -82,24 +82,38 @@ public class statica : MonoBehaviour
         {
             SceneManager.LoadScene(8);
             collectedNotes = 0;
+            coin = 0;
+            difficultySpeed = 0;
+
+            FilipinoQ.FilipinoScore = 0;
+            FilipinoQ.filipinoQuizIsDone = false;
+            EnglishQ.EnglishScore = 0;
+            EnglishQ.EnglishQuizIsDone = false;
+            scienceQ.scienceScore = 0;
+            scienceQ.scienceQuizIsDone = false;
+            historyQ.historyScore = 0;
+            historyQ.historyQuizIsDone = false;
+            mathQ.mathScore = 0;
+            mathQ.mathQuizIsDone = false;
+            BGM.Instance.StopMusic();
         }
     }
 
     public void easy()
     {
-        difficultySpeed = 7;
-        numberOfQuestions = 3;
+        difficultySpeed = 8;
+        SceneManager.LoadSceneAsync(2);
     }
 
     public void medium()
     {
-        difficultySpeed = 10;
-        numberOfQuestions = 5;
+        difficultySpeed = 15;
+        SceneManager.LoadSceneAsync(2);
     }
 
     public void hard()
     {
-        difficultySpeed = 12;
-        numberOfQuestions = 10;
+        difficultySpeed = 20;
+        SceneManager.LoadSceneAsync(2);
     }
 }

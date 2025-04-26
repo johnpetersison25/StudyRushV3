@@ -47,6 +47,7 @@ public class englishAgent : MonoBehaviour
             mathQ.mathScore = 0;
             mathQ.mathQuizIsDone = false;
             statica.collectedNotes = 0;
+            statica.coin = 0;
             agent.speed = 0f;
             BGM.Instance.StopMusic();
 
